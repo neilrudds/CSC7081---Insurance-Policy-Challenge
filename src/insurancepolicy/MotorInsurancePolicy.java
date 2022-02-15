@@ -74,16 +74,14 @@ public class MotorInsurancePolicy extends GenericInsurancePolicy {
 	@Override
 	public void setSurname(String surname) {
 		super.setSurname(surname);
-		this.generatePolicyId(); // Regenerate the policyId
+		this.generatePolicyId(); // Regenerate the policyId if we change the surname
 	}
 
 	@Override
 	public void displayAll() {
-		// TODO Auto-generated method stub
 		super.displayAll();
 		System.out.printf("Policy Id: %s\n", getPolicyId());
 		System.out.printf("Motor Type: %s\n", getMotorType());
 	}
-	
 	
 }
